@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube bypass Mafiozi",
+  "version": "1.0",
+  "description": "Это расширение перенаправляет трафик YouTube через SOCKS5-прокси. Создано @KPAKOB",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "proxy",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.googlevideo.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
