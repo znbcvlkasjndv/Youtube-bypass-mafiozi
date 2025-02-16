@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Proxy</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            width: 220px;
+            padding: 15px;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            background: #ff416c;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.3);
+            transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button:hover::after {
+            width: 0;
+            height: 0;
+        }
+
+        button:hover {
+            background: #ff758c;
+            transform: scale(1.05);
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ff416c;
+        }
+    </style>
+</head>
+<body>
+    <h3>YouTube Proxy</h3>
+    <button id="toggleProxy">Включить</button>
+    <p><a href="https://t.me/iLoveRTX3080" target="_blank">Наш Telegram</a></p>
+    <script src="popup.js"></script>
+</body>
+</html>
